@@ -1,9 +1,9 @@
 /*
-Theme Name: Ross Harbaugh 2016
+Theme Name: Theme Name
 Theme URI: http://wordpress.org/themes/twentythirteen
 Author: Nick Harbaugh
 Author URI: http://nickharbaugh.com/
-Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Description: A customized starter theme for quick Wordpress development
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -51,6 +51,222 @@ $on-laptop:        800px;
         @content;
     }
 }
+
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
+}
+
+body {
+    margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+pre {
+    overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Typography
@@ -131,6 +347,7 @@ ins {
 big {
     font-size: 125%;
 }
+
 
 /*--------------------------------------------------------------
 # Elements
@@ -222,6 +439,7 @@ table {
     margin: 0 0 1.5em;
     width: 100%;
 }
+
 
 /*--------------------------------------------------------------
 # Forms
@@ -330,6 +548,7 @@ textarea {
     width: 100%;
 }
 
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -367,6 +586,7 @@ textarea {
     outline: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
@@ -388,6 +608,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /*--------------------------------------------------------------
 # Clearings
@@ -418,6 +639,7 @@ textarea {
     clear: both;
 }
 
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -429,6 +651,7 @@ textarea {
 .widget select {
     max-width: 100%;
 }
+
 
 /*--------------------------------------------------------------
 # Content
@@ -465,6 +688,7 @@ textarea {
     margin: 0 0 1.5em;
 }
 
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -472,6 +696,7 @@ textarea {
 .archive .format-aside .entry-title {
     display: none;
 }
+
 
 /*--------------------------------------------------------------
 ## Comments
@@ -483,6 +708,7 @@ textarea {
 .bypostauthor {
     display: block;
 }
+
 
 /*--------------------------------------------------------------
 # Infinite scroll
@@ -497,6 +723,7 @@ textarea {
 .infinity-end.neverending .site-footer {
     display: block;
 }
+
 
 /*--------------------------------------------------------------
 # Media
@@ -537,6 +764,7 @@ object {
     max-width: 100%;
 }
 
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
@@ -558,6 +786,7 @@ object {
 .wp-caption-text {
     text-align: center;
 }
+
 
 /*--------------------------------------------------------------
 ## Galleries
